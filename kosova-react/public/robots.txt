@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://kosovatravel.com/sitemap.xml
+
+Sitemap: https://explore-ks.vercel.app/sitemap.xml

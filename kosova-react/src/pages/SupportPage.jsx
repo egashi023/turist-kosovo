@@ -36,7 +36,8 @@ function SupportPage() {
                 <meta property="og:title" content="Ndihmë & Mbështetje — Kosova Travel" />
                 <meta property="og:description" content="Qendra e ndihmës së Kosova Travel. FAQ dhe kontakt." />
                 <meta property="og:type" content="website" />
-                <link rel="canonical" href="https://kosovatravel.com/support" />
+                <meta property="og:image" content="https://explore-ks.vercel.app/og-image.png" />
+                <link rel="canonical" href="https://explore-ks.vercel.app/support" />
             </Helmet>
 
             <div className="page-banner">

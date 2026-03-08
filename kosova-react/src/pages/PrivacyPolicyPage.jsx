@@ -8,9 +8,10 @@ function PrivacyPolicyPage() {
                 <title>Politika e Privatësisë — Kosova Travel</title>
                 <meta name="description" content="Politika e privatësisë e Kosova Travel. Mësoni si i mbledhim, përdorim dhe mbrojmë të dhënat tuaja personale." />
                 <meta property="og:title" content="Politika e Privatësisë — Kosova Travel" />
-                <meta property="og:description" content="Politika e privatësisë e Kosova Travel." />
+                <meta property="og:description" content="Mësoni si i mbrojmë të dhënat tuaja në Kosova Travel." />
                 <meta property="og:type" content="website" />
-                <link rel="canonical" href="https://kosovatravel.com/privacy-policy" />
+                <meta property="og:image" content="https://explore-ks.vercel.app/og-image.png" />
+                <link rel="canonical" href="https://explore-ks.vercel.app/privacy-policy" />
             </Helmet>
 
             <div className="page-banner">

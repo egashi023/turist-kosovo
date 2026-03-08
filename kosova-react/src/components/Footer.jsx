@@ -24,6 +24,7 @@ function Footer() {
                         <ul>
                             <li><Link to="/support">Ndihmë & FAQ</Link></li>
                             <li><Link to="/privacy-policy">Politika e Privatësisë</Link></li>
+                            <li><Link to="/terms">Kushtet e Përdorimit</Link></li>
                         </ul>
                     </div>
                     <div>

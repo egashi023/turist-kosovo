@@ -92,10 +92,18 @@ function DestinationsPage() {
             <Helmet>
                 <title>Destinacionet — Qytetet e Kosovës | Kosova Travel</title>
                 <meta name="description" content="Eksploroni të gjitha destinacionet turistike në Kosovë — Prishtina, Prizreni, Peja, Gjakova, Gjilani dhe më shumë. Atraksionet dhe informatat kryesore." />
+                <meta name="keywords" content="Destinacionet, Prishtina, Prizren, Peja, Gjakova, Mitrovica, Gjilan, Ferizaj" />
+
                 <meta property="og:title" content="Destinacionet — Qytetet e Kosovës" />
                 <meta property="og:description" content="Eksploroni çdo qytet, monument dhe bukuri natyrore të Kosovës." />
                 <meta property="og:type" content="website" />
-                <link rel="canonical" href="https://kosovatravel.com/destinations" />
+                <meta property="og:image" content="https://explore-ks.vercel.app/og-image.png" />
+                <meta property="og:url" content="https://explore-ks.vercel.app/destinations" />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Destinacionet turistike në Kosovë" />
+
+                <link rel="canonical" href="https://explore-ks.vercel.app/destinations" />
             </Helmet>
             <div className="page-banner">
                 <div className="container" style={{ textAlign: 'center', padding: '80px 20px' }}>

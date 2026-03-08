@@ -54,10 +54,17 @@ function ContactPage() {
             <Helmet>
                 <title>Na Kontaktoni — Kosova Travel</title>
                 <meta name="description" content="Na kontaktoni për çdo pyetje rreth udhëtimeve në Kosovë. Ekipi i Kosova Travel do t'ju ndihmojë me planifikimin e udhëtimit tuaj." />
+                <meta name="keywords" content="Kontakt, Kosova Travel, Pyetje, Suport" />
+
                 <meta property="og:title" content="Na Kontaktoni — Kosova Travel" />
                 <meta property="og:description" content="Na kontaktoni për të planifikuar udhëtimin tuaj në Kosovë." />
                 <meta property="og:type" content="website" />
-                <link rel="canonical" href="https://kosovatravel.com/contact" />
+                <meta property="og:image" content="https://explore-ks.vercel.app/og-image.png" />
+                <meta property="og:url" content="https://explore-ks.vercel.app/contact" />
+
+                <meta name="twitter:card" content="summary" />
+
+                <link rel="canonical" href="https://explore-ks.vercel.app/contact" />
             </Helmet>
             <div className="page-banner">
                 <div className="container" style={{ textAlign: 'center', padding: '80px 20px' }}>

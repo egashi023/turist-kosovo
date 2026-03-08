@@ -39,14 +39,14 @@ function CitySlider() {
                 </div>
             ))}
             <div className="hero-controls">
-                {slides.map((_, i) => (
+                {slides.map((slide, i) => (
                     <button
                         key={i}
                         className={i === current ? 'active' : ''}
                         onClick={() => setCurrent(i)}
-                    >
-                        {i + 1}
-                    </button>
+                        aria-label={`Shiko slajdin për ${slide.city}`}
+                        title={slide.city}
+                    />
                 ))}
             </div>
         </div>

@@ -45,10 +45,17 @@ function GalleryPage() {
             <Helmet>
                 <title>Galeria — Foto nga Kosova | Kosova Travel</title>
                 <meta name="description" content="Shikoni pamjet më të bukura nga qytetet dhe natyra e Kosovës. Galeria fotografike e Prishtinës, Prizrenit, Pejës, Gjakovës dhe më shumë." />
+                <meta name="keywords" content="Galeria, Foto Kosova, Peizazhe, Qytete" />
+
                 <meta property="og:title" content="Galeria — Foto nga Kosova" />
                 <meta property="og:description" content="Pamjet më të bukura nga qytetet dhe natyra e Kosovës." />
                 <meta property="og:type" content="website" />
-                <link rel="canonical" href="https://kosovatravel.com/gallery" />
+                <meta property="og:image" content="https://explore-ks.vercel.app/og-image.png" />
+                <meta property="og:url" content="https://explore-ks.vercel.app/gallery" />
+
+                <meta name="twitter:card" content="summary_large_image" />
+
+                <link rel="canonical" href="https://explore-ks.vercel.app/gallery" />
             </Helmet>
             <div className="page-banner">
                 <div className="container" style={{ textAlign: 'center', padding: '80px 20px' }}>

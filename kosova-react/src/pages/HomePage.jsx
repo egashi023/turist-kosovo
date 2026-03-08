@@ -85,13 +85,27 @@ function HomePage() {
             <Helmet>
                 <title>Kosova Travel — Zbuloni Bukuritë e Kosovës</title>
                 <meta name="description" content="Zbuloni qytetet, natyrën dhe kulturën e Kosovës. Udhërrëfyes turistik për Prishtinën, Prizrenin, Pejën, Gjakovën, Gjilanin dhe më shumë." />
+                <meta name="keywords" content="Kosova, Turizmi, Prishtina, Prizren, Rugova, Gjakova, Peja, Udhëtim, Ballkan" />
+
+                {/* Facebook / OG */}
                 <meta property="og:title" content="Kosova Travel — Zbuloni Bukuritë e Kosovës" />
-                <meta property="og:description" content="Udhërrëfyesi juaj i plotë për të zbuluar qytetet dhe natyrën e Kosovës." />
+                <meta property="og:description" content="Udhërrëfyesi juaj i plotë për të zbuluar qytetet dhe natyrën e Kosovës. Vizitoni vendin me mikpritjen më të madhe në Ballkan." />
                 <meta property="og:type" content="website" />
-                <meta property="og:image" content="https://kosovatravel.com/images/prishtina.jpg" />
-                <meta property="og:url" content="https://kosovatravel.com" />
-                <link rel="canonical" href="https://kosovatravel.com/" />
+                <meta property="og:image" content="https://explore-ks.vercel.app/og-image.png" />
+                <meta property="og:url" content="https://explore-ks.vercel.app" />
+
+                {/* Twitter */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Kosova Travel — Zbuloni Bukuritë e Kosovës" />
+                <meta name="twitter:description" content="Udhërrëfyesi i plotë për turizmin në Kosovë." />
+                <meta name="twitter:image" content="https://explore-ks.vercel.app/og-image.png" />
+
+                <link rel="canonical" href="https://explore-ks.vercel.app/" />
                 <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+
+                {/* Search Console / Bing */}
+                <meta name="google-site-verification" content="PLACEHOLDER_GOOGLE_VERIFICATION" />
+                <meta name="msvalidate.01" content="PLACEHOLDER_BING_VERIFICATION" />
             </Helmet>
             <CitySlider />
 

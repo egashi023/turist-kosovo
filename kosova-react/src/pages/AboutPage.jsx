@@ -22,10 +22,19 @@ function AboutPage() {
             <Helmet>
                 <title>Rreth Kosovës — Kosova Travel</title>
                 <meta name="description" content="Mësoni për Kosovën — historinë, kulturën, qytetet dhe natyrën e bukur. Zbuloni pse Kosova është destinacioni ideal për udhëtarët." />
+                <meta name="keywords" content="Historia e Kosovës, Kultura, Pavarësia, Turizmi në Kosovë" />
+
                 <meta property="og:title" content="Rreth Kosovës — Kosova Travel" />
                 <meta property="og:description" content="Historia, kultura dhe qytetet e Kosovës. Zbuloni vendin tonë të bukur." />
                 <meta property="og:type" content="website" />
-                <link rel="canonical" href="https://kosovatravel.com/about" />
+                <meta property="og:image" content="https://explore-ks.vercel.app/og-image.png" />
+                <meta property="og:url" content="https://explore-ks.vercel.app/about" />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Rreth Kosovës — Kosova Travel" />
+                <meta name="twitter:description" content="Gjithçka që duhet të dini për Kosovën." />
+
+                <link rel="canonical" href="https://explore-ks.vercel.app/about" />
             </Helmet>
             {/* Hero */}
             <div className="page-banner about-hero" style={{
