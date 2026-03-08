@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node api/index.js",
     "dev": "nodemon api/index.js",
-    "build": "cd kosova-react && npm install && npm run build"
+    "build": "cd kosova-react && npm install && npm run build && cd .. && rm -rf dist && mv kosova-react/dist ./dist"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

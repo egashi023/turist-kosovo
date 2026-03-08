@@ -1,34 +1,17 @@
 {
     "version": 2,
-    "builds": [
+    "rewrites": [
         {
-            "src": "kosova-react/package.json",
-            "use": "@vercel/static-build",
-            "config": {
-                "distDir": "dist"
-            }
+            "source": "/api/(.*)",
+            "destination": "/api/index.js"
         },
         {
-            "src": "api/index.js",
-            "use": "@vercel/node"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/api/(.*)",
-            "dest": "api/index.js"
+            "source": "/uploads/(.*)",
+            "destination": "/uploads/$1"
         },
         {
-            "src": "/uploads/(.*)",
-            "dest": "/uploads/$1"
-        },
-        {
-            "src": "/assets/(.*)",
-            "dest": "kosova-react/dist/assets/$1"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "kosova-react/dist/index.html"
+            "source": "/(.*)",
+            "destination": "/index.html"
         }
     ],
     "headers": [
