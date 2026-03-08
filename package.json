@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node api/index.js",
-    "dev": "nodemon api/index.js"
+    "dev": "nodemon api/index.js",
+    "build": "cd kosova-react && npm install && npm run build"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
