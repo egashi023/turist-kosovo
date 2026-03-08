@@ -30,7 +30,10 @@ function DashboardPage() {
 
     const fetchMyPhotos = async () => {
         try {
-            const res = await fetch('/api/photos.php?user=me')
+            const token = localStorage.getItem('kosova-token');
+            const res = await fetch('/api/photos?user=me', {
+                headers: { 'Authorization': `Bearer ${token}` }
+            })
             const data = await res.json()
             if (data.success) setPhotos(data.data)
         } catch { /* silent */ }
@@ -64,8 +67,10 @@ function DashboardPage() {
         formData.append('image', selectedFile)
 
         try {
-            const res = await fetch('/api/photos.php', {
+            const token = localStorage.getItem('kosova-token');
+            const res = await fetch('/api/photos', {
                 method: 'POST',
+                headers: { 'Authorization': `Bearer ${token}` },
                 body: formData,
             })
             const data = await res.json()
@@ -84,11 +89,9 @@ function DashboardPage() {
         setUploading(false)
     }
 
-    const handleLogout = async () => {
-        try {
-            await fetch('/api/auth.php?action=logout', { method: 'POST' })
-        } catch { /* silent */ }
+    const handleLogout = () => {
         localStorage.removeItem('kosova-user')
+        localStorage.removeItem('kosova-token')
         navigate('/')
     }
 

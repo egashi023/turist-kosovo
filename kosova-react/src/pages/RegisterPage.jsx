@@ -31,7 +31,7 @@ function RegisterPage() {
 
         setSubmitting(true)
         try {
-            const res = await fetch('/api/auth.php?action=register', {
+            const res = await fetch('/api/auth/register', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(form),
@@ -44,7 +44,7 @@ function RegisterPage() {
                 setStatus({ type: 'error', message: data.errors?.join(', ') || data.error || 'Gabim gjatë regjistrimit.' })
             }
         } catch {
-            setStatus({ type: 'error', message: 'Nuk mund të lidhet me serverin. Sigurohuni që XAMPP është i ndezur.' })
+            setStatus({ type: 'error', message: 'Nuk mund të lidhet me serverin.' })
         }
         setSubmitting(false)
     }

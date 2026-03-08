@@ -23,7 +23,7 @@ function LoginPage() {
 
         setSubmitting(true)
         try {
-            const res = await fetch('/api/auth.php?action=login', {
+            const res = await fetch('/api/auth/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(form),
@@ -31,12 +31,13 @@ function LoginPage() {
             const data = await res.json()
             if (data.success) {
                 localStorage.setItem('kosova-user', JSON.stringify(data.user))
+                localStorage.setItem('kosova-token', data.token) // Save JWT
                 navigate('/dashboard')
             } else {
                 setStatus({ type: 'error', message: data.errors?.join(', ') || data.error || 'Gabim gjatë kyçjes.' })
             }
         } catch {
-            setStatus({ type: 'error', message: 'Nuk mund të lidhet me serverin. Sigurohuni që XAMPP është i ndezur.' })
+            setStatus({ type: 'error', message: 'Nuk mund të lidhet me serverin.' })
         }
         setSubmitting(false)
     }

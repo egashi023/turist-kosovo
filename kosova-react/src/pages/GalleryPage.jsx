@@ -24,7 +24,7 @@ function GalleryPage() {
     const [userPhotos, setUserPhotos] = useState([])
 
     useEffect(() => {
-        fetch('/api/photos.php')
+        fetch('/api/photos')
             .then(res => res.json())
             .then(data => {
                 if (data.success) setUserPhotos(data.data)
